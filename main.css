@@ -1,0 +1,126 @@
+:root {
+    --neck-color: #614635;
+    --neck-gradient: #7c695d;
+    --correct:#52d388;
+    --correct-gradient: #9ad8b4;
+    --wrong: #e26e5f;
+    --wrong-gradient: #e4a39a;
+    --fret: #dbdbdd;
+    --fret-gradient: rgb(145, 145, 145);
+    --background:#cbb468;
+    --background-gradient: #e4cb78;
+    --font-color: #454547;
+    --dots: #d1d0d0;
+    --dots-gradient: #adacac;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: 3fr 8fr 3fr;
+    background: linear-gradient(to right, var(--background), var(--background-gradient)); 
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+#target {
+    font-size: 4em;
+    text-align: center;
+}
+
+#target-container {
+    margin: 0 auto;
+    width: 1000px;
+    margin-bottom: 3em;
+    grid-column: 2 / 3;
+}   
+
+#guitar-container {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 1000px;
+    background-color: var(--neck-color);
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.fret {
+    position: relative;
+    border-left: 3px solid var(--fret);
+    background: linear-gradient(to right, var(--neck-color), var(--neck-gradient));
+    height: 30px;
+}
+
+.fret:after {
+    position: absolute;
+    margin-top: 15px;
+    content: "";
+    width: 100%; 
+}
+
+.string-1:after {
+    height: 1px;
+    background: #e4d9d9;
+}
+
+.string-2:after {
+    height: 1px;
+    background: #aca4a1;
+}
+
+.string-3:after {
+    height: 2px;
+    background: #ac8159;
+}
+
+.string-4:after {
+    height: 2px;
+    background: #ac7359;
+}
+
+.string-5:after {
+    height: 2px;
+    background: #a06b53;
+}
+
+.string-6:after {
+    height: 3px;
+    background: #996e50;
+}
+
+.dots {
+    z-index: 10;
+    position: absolute;
+    top: 81px;
+    left: 29px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--dots), var(--dots-gradient));
+}
+
+.dot-7a, .dot-12a {
+    top: 51px;
+}
+
+.dot-7b, .dot-12b {
+    top: 111px;
+}
+
+
+.correct {
+    background: linear-gradient(to right, var(--correct), var(--correct-gradient)) !important;
+}
+
+.wrong {
+    background: linear-gradient(to right, var(--wrong), var(--wrong-gradient)) !important;
+}

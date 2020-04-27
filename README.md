@@ -1,4 +1,4 @@
-# Guitraesure Hunt
+# Guitreasure Hunt
 
 In this project, I built a note finding app to learn the notes on a guitar neck. 
 The app randomly chooses a note and the user has to find all occurrences on the 
