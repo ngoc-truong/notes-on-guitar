@@ -10,6 +10,7 @@
     --background:#cbb468;
     --background-gradient: #e4cb78;
     --font-color: #454547;
+    --font-soft: #6f6f75;
     --dots: #d1d0d0;
     --dots-gradient: #adacac;
 }
@@ -30,23 +31,33 @@ p {
     font-size: 1.8em;
 }
 
-#target {
-    font-size: 4em;
-    text-align: center;
-}
 
-#target-container {
+#instructions {
     margin: 0 auto;
-    width: 1000px;
-    margin-bottom: 3em;
+    width: 1200px;
     grid-column: 2 / 3;
 }   
+
+#target {
+    font-size: 5em;
+    text-align: center;
+    grid-column: 2 / 3;
+    margin-top: 0.8em;
+}
+
+#statistics {
+    font-size: 0.7em;
+    text-align: right;
+    grid-column: 2 / 3;
+    margin-bottom: 1em;
+    color: var(--font-soft);
+}
 
 #guitar-container {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    width: 1000px;
+    grid-template-columns: 1fr 0.97fr 0.94fr 0.91fr 0.88fr 0.85fr 0.82fr 0.79fr 0.76fr 0.73fr 0.70fr 0.67fr; 
+    width: 1200px;
     background-color: var(--neck-color);
     margin: 0 auto;
     position: relative;
@@ -101,11 +112,30 @@ p {
     z-index: 10;
     position: absolute;
     top: 81px;
-    left: 29px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background: linear-gradient(45deg, var(--dots), var(--dots-gradient));
+}
+
+.dot-3 {
+    left: 46px;
+}
+
+.dot-5 {
+    left: 42px;
+}
+
+.dot-7a, .dot-7b {
+    left: 37px;
+}
+
+.dot-9 {
+    left: 34px;
+}
+
+.dot-12a, .dot-12b {
+    left: 30px;
 }
 
 .dot-7a, .dot-12a {
@@ -115,7 +145,6 @@ p {
 .dot-7b, .dot-12b {
     top: 111px;
 }
-
 
 .correct {
     background: linear-gradient(to right, var(--correct), var(--correct-gradient)) !important;
