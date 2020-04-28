@@ -12,7 +12,7 @@ This app is built with HTML, CSS, and Javascript.
 - After finding all occurrences of a note (n = 6), the app suggests a new random note.
 
 ## Screenshot
-
+![Guitar note finding app](https://raw.githubusercontent.com/ngoc-truong/notes-on-guitar/master/pictures/screenshot.png)
 
 
 ## Planned features
