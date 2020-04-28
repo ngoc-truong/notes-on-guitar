@@ -6,11 +6,16 @@ virtual guitar neck.
 
 This app is built with HTML, CSS, and Javascript. 
 
-## Further similar app ideas
+## Features
+- The fretboard was created dynamically. This way, the app can be extended for other string-like instruments (e.g. ukulele).
+- Statistics show how many wrong and correct answers the user had (in the current round) + how many notes s/he has revised.
+- After finding all occurrences of a note (n = 6), the app suggests a new random note.
+
+## Screenshot
+
+
+
+## Planned features
 - The app will show all notes in a particular chord, so that users can design their own chord shapes.
 - The app will show a (major) key and the user has to enter all notes in this key.
 
-## Bug fixes
-- Implement refresh button
-- If all notes were found, fretboard should refresh
-- Nice to have: Counter of which note was practiced how much
