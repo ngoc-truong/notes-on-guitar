@@ -6,6 +6,7 @@ const string3 = createNotesOnString(allNotes, 11);
 const string4 = createNotesOnString(allNotes, 6);
 const string5 = createNotesOnString(allNotes, 1);
 const string6 = createNotesOnString(allNotes, 8);
+let numOfNotes = 0;
 let correct = 0;
 let incorrect = 0;
 
@@ -25,6 +26,7 @@ const allFrets      = document.querySelectorAll(".fret");
 const targetNote    = document.querySelector("#target");
 const numCorrect    = document.querySelector("#num-correct");
 const numWrong      = document.querySelector("#num-wrong");
+const numNotes      = document.querySelector("#num-notes");
 
 setNotesOnDivs(fretsString1, string1);
 setNotesOnDivs(fretsString2, string2);
@@ -89,9 +91,11 @@ function restart() {
 
     correct = 0;
     incorrect = 0;
+    numOfNotes++;
 
     numCorrect.textContent = "Correct Answers: 0";
     numWrong.textContent = "Wrong Answers: 0";
+    numNotes.textContent = `No. of notes: ${numOfNotes}`;
     targetNote.textContent = createRandomNote(allNotes);
 }
 
