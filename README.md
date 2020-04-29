@@ -5,7 +5,7 @@ The app randomly chooses a note and the user has to find all occurrences on the
 virtual guitar neck.
 
 This app is built with HTML, CSS, and Javascript. 
-
+### [Click here to view app](https://htmlpreview.github.io/?https://github.com/ngoc-truong/notes-on-guitar/blob/master/index.html)
 ![Guitar note finding app](https://raw.githubusercontent.com/ngoc-truong/notes-on-guitar/master/pictures/screenshot.png)
 
 ## Features
